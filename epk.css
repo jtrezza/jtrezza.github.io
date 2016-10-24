@@ -1,0 +1,28 @@
+div.row div {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+div.row div.error-message {
+  display: block;
+  border: red solid 2px;
+  background: red;
+}
+.product-card {
+  border: red solid 2px;
+}
+@media screen and (max-width: 639px) {
+  .col-sm-6 {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 1023px) {
+  .col-md-4 {
+    width: 33.3333%%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .col-lg-3 {
+    width: 25%;
+  }
+}
