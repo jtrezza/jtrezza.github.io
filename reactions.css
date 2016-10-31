@@ -1,0 +1,85 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.container {
+  position: relative;
+  text-align: center;
+}
+.reactions {
+  background-color: white;
+  border-radius: 30px;
+  display: none;
+  height: 60px;
+  position: absolute;
+  top: -61px;
+  width: 350px;
+  -webkit-box-shadow: 0px 1px 7px 0px rgba(40, 40, 40, 0.64);
+  -moz-box-shadow:    0px 1px 7px 0px rgba(40, 40, 40, 0.64);
+  box-shadow:         0px 1px 7px 0px rgba(40, 40, 40, 0.64);
+}
+.reactions .reaction {
+  background: url('reactions-preview-px2.png');
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 70px;
+  margin-left: -20px;
+  margin-top: -6px;
+  position: relative;
+  transition: transform .4s;
+  transform: scale(.6);
+  width: 70px;
+}
+.reactions .reaction:first-child {
+  margin-left: 0;
+}
+.reaction .reaction__label {
+  position: absolute;
+  background-color: rgba(0,0,0,0.7);
+  color: white;
+  display: none;
+  padding: 6px 11px;
+  border-radius: 18px;
+  font-size: 16px;
+  top: -38px;
+  left: 6px;
+}
+.reaction:hover {
+  transform: scale(.8) translate(0, -10px);
+}
+.reaction:hover .reaction__label {
+  display: inline;
+}
+.like-btn {
+  border: solid 1px #7f7f7f;
+  border-radius: 4px;
+  color: #7f7f7f;
+  cursor: pointer;
+  padding: 6px;
+  position: relative;
+  text-align: center;
+  width: 60px;
+}
+.like-btn:hover .reactions {
+  display: block;
+}
+.reaction.like {
+  background-position: -27px -34px;
+}
+.reaction.love {
+  background-position: -113px -34px;
+}
+.reaction.haha {
+  background-position: -200px -34px;
+}
+.reaction.wow {
+  background-position: -286px -34px;
+}
+.reaction.sad {
+  background-position: -373px -34px;
+}
+.reaction.angry {
+  background-position: -459px -34px;
+}
+.lorem-ipsum {
+  max-width: 50%;
+}
