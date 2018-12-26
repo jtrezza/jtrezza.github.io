@@ -1,59 +1,52 @@
----
-layout: index
-title: Home
-permalink: /
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>José Trezza</title>
+  <style type="text/css">
+    body {
+    background: rgb(260, 219, 58);
+    color: rgb(23, 23, 21);
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+      sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  }
 
-<div id="service">
-    <div class="container">
-        <div class="row centered">
-            <div class="col-md-4">
-                <i class="fa fa-heart-o"></i>
-                <h4>Handsomely Crafted</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                <p><br/><a href="#" class="btn btn-theme">More Info</a></p>
-            </div>
-            <div class="col-md-4">
-                <i class="fa fa-flask"></i>
-                <h4>Retina Ready</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                <p><br/><a href="#" class="btn btn-theme">More Info</a></p>
-            </div>
-            <div class="col-md-4">
-                <i class="fa fa-trophy"></i>
-                <h4>Quality Theme</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                <p><br/><a href="#" class="btn btn-theme">More Info</a></p>
-            </div>		 				
-        </div>
-    </div><! --/container -->
-</div><! --/service -->
+  .main-image {
+    max-width: 720px;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+  }
 
-{% include portfolio.html title="LATEST WORKS" limit=10 %}
+  .main-image img {
+    margin: 48px auto 20px;
+    height: 140px;
+    width: 140px;
+  }
 
-<div class="container mtb">
-    <div class="row">
-        <div class="col-lg-4 col-lg-offset-1">
-            <h4>More About Our Agency.</h4>
-            <p>{{ site.about }}</p>
-            <p><br/><a href="{{ "/about/" | prepend: site.baseurl }}" class="btn btn-theme">More Info</a></p>
-        </div>
+  .error-msg-container {
+    margin: 18px auto 30px auto;
+    max-width: 800px;
+    width: 80%;
+    text-align: center;
+  }
 
-        <div class="col-lg-3">
-            <h4>Frequently Asked</h4>
-            <div class="hline"></div>
-            {% for post in site.categories['question'] %} 
-                <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>
-            {% endfor %}
-        </div>
-
-        <div class="col-lg-3">
-            <h4>Latest Posts</h4>
-            <div class="hline"></div>
-            {% for post in site.categories['blog'] limit:5 %} 
-                <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}.</a></p>
-            {% endfor %} 
-        </div>
-
-    </div><! --/row -->
-</div><! --/container -->
+  .error-msg-container h1 {
+    font-size: 56px;
+    max-width: 560px;
+    margin: auto auto 48px;
+  }
+  </style>
+</head>
+<body>
+  <div class="main-image">
+    <img src="img/jtrezza.png" alt="">
+  </div>
+  <div class="error-msg-container">
+    <h1>Bienvenido a mi sitio oficial</h1>
+    <p>Sitio oficial de José Trezza. Espera pronto más contenido.</p>
+  </div>
+</body>
+</html>
